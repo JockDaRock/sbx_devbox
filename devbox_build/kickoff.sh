@@ -38,10 +38,11 @@ ansible-playbook -i hosts devbox.yml
 echo ""
 
 # Run IOx Client install
-echo "Running DevBox Setup ioxlcient"
+echo "Running Setup ioxlcient"
 mkdir /ioxclient
-cd /ioxlcient
+cd /ioxclient
 curl -O https://pubhub-prod.s3-us-west-2.amazonaws.com/media/iox-docs/docs/artifacts/ioxclient/ioxclient-v1.4.0.0/ioxclient_1.4.0.0_linux_amd64.tar.gz
+tar -zxf ioxclient_1.4.0.0_linux_amd64.tar.gz
 cd ioxclient_1.4.0.0_linux_amd64
 chmod +x ioxclient
 cp ioxclient /usr/local/bin/ioxclient

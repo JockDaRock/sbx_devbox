@@ -1,4 +1,5 @@
 venv/
 *.pyc
 .vagrant/
+.idea
 devbox_build/devbox.retry
